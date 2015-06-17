@@ -18,8 +18,9 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-	color: @brand-success;
+	color: @font-title;
 	outline: none;
+	text-decoration:none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -101,12 +102,12 @@ header {
 @media(min-width:768px) {
 	header {
 		.container {
-			padding-top: 200px;
-			padding-bottom: 100px;
+			/*padding-top: 200px;
+			padding-bottom: 100px;*/
 		}
 		.intro-text {
 			.name {
-				font-size: 4.75em;
+				font-size: 35px;
 			}
 			.skills {
 				font-size: 1.75em;
@@ -189,7 +190,9 @@ section.success {
 	}
 }
 
+	
 #portfolio {
+	background: @brand-success;
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
@@ -254,7 +257,7 @@ section.success {
 	&:focus,
 	&:active,
 	&.active {
-		color: @brand-success;
+		color: @font-title;
 		background: white;
 		border: solid 2px white;
 	}
@@ -431,4 +434,59 @@ footer {
     	opacity: 0;
     	display: none;
     }
+}
+
+.img-rounded {
+  border-radius: 100%;
+  width: 300px;
+}
+
+/* Rounded avatars */
+.avatar {
+	width: 17%;
+    position: relative;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+}
+
+
+/* Navigation */
+
+.navigation-main li a:hover {
+  background-color: @brand-hover;
+}
+
+.navigation-main li {
+  float: left;
+  margin: 0 0 32px;
+  line-height: 1;
+  width: 30%;
+  list-style: none;
+}
+.navigation-main li a {
+  color: @font-title;
+  border-radius: 3px;
+  display: block;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 13px 0 23px;
+}
+.navigation-main li a:hover {
+  background-color: @brand-hover;
+}
+
+.navigation-main li a em {
+  color: #fff;
+  display: block;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 11px;
 }

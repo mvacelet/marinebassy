@@ -406,17 +406,10 @@ footer .footer-below {
   box-shadow: 0 0 0 3px #ffffff, 0 0 0 4px #999999, 0 2px 5px 4px rgba(0, 0, 0, 0.2);
 }
 /* Navigation */
-.navigation-main li a:hover {
+.navigation-main div a:hover {
   background-color: #1f2838;
 }
-.navigation-main li {
-  float: left;
-  margin: 0 0 32px;
-  line-height: 1;
-  width: 30%;
-  list-style: none;
-}
-.navigation-main li a {
+.navigation-main div a {
   color: #ce616e;
   border-radius: 3px;
   display: block;
@@ -425,10 +418,10 @@ footer .footer-below {
   line-height: 1;
   padding: 13px 0 23px;
 }
-.navigation-main li a:hover {
+.navigation-main div a:hover {
   background-color: #1f2838;
 }
-.navigation-main li a em {
+.navigation-main div a em {
   color: #fff;
   display: block;
   font-size: 22px;
